@@ -4,7 +4,7 @@
 Requires curl php extension
  License: MIT
 
-# EXAMPLES
+# Examples
 
 ## BEFORE YOU BEGIN! Set the spree URL and admin user token in the SpreeAPI class
 
@@ -13,7 +13,7 @@ Requires curl php extension
 $api = new SpreeAPI;
 ```
 
-### Taxonomies:
+### Taxonomies
 ``` php
 // get all taxonomies:
 print_r($api->taxonomies());
@@ -22,7 +22,7 @@ print_r($api->taxonomies());
 print_r($api->taxonomies(2));
 ```
 
-### Orders:
+### Orders
 ``` php
 // get all orders
 foreach ($api->orders()->orders as $order)
