@@ -13,7 +13,7 @@ Requires curl php extension
 $api = new SpreeAPI;
 ```
 
-### TAXONOMIES:
+### Taxonomies:
 ``` php
 // get all taxonomies:
 print_r($api->taxonomies());
@@ -22,7 +22,7 @@ print_r($api->taxonomies());
 print_r($api->taxonomies(2));
 ```
 
-### ORDERS:
+### Orders:
 ``` php
 // get all orders
 foreach ($api->orders()->orders as $order)
@@ -32,7 +32,7 @@ foreach ($api->orders()->orders as $order)
 print_r($api->orders('R285028844'));
 ```
 
-### PRODUCTS:
+### Products
 ``` php
 //fetch all products
 foreach ($api->products()->products as $product)
