@@ -6,7 +6,9 @@
 
 
 ## INIT YOUR API CLIENT:
+``` php
 $api = new SpreeAPI;
+```
 
 ## TAXONOMIES:
 ``` php
