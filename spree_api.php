@@ -79,7 +79,7 @@ class SpreeAPI {
       } else {
         $sURL .= "/".$params[0];
         // if accessing an individual item which isn't a product then 
-        // reduce ttl to 90 seconds
+        // reduce ttl to 60 seconds
         if ($uri != 'products')
           $ttl = 60;
       }
