@@ -4,6 +4,7 @@
 
 # EXAMPLES
 
+## BEFORE YOU BEGIN! Set the spree URL and admin user token in the SpreeAPI class
 
 ``` php
 // INIT YOUR API CLIENT:
