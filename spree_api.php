@@ -42,9 +42,9 @@
 
 class SpreeAPI {
   // the url of the spree store
-  private $_api_endpoint = 'http://localhost:3001';
+  private $_api_endpoint = 'http://localhost:8080';
   // admin api token 
-  private $_api_token    = 'ae75d450c2a656b23274a88ae57796f8db950f635ba50e53';
+  private $_api_token    = '__YOUR_API_KEY_HERE___';
   // how long cached records are considered 'fresh' (in seconds):
   // set to 0 to disable caching of records but it's not recommended
   private $_cache_ttl    = 300;
@@ -56,6 +56,8 @@ class SpreeAPI {
     $sCacheDir = dirname($this->cachePath("dummy"));
     if (!is_dir($sCacheDir))
       mkdir($sCacheDir);
+    if (strlen($this->_api_token) <= 32)
+      throw new Exception("Set your API token first doofus!");
   }
 
   public function __call($c, $a = array()) {
