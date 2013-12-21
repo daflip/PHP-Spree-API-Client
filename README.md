@@ -2,6 +2,7 @@
  Simple High Performance Spree API Client for PHP
 
  License: MIT
+```
 
    _______  __    _    __  __ ____  _     _____ ____  
   | ____\ \/ /   / \  |  \/  |  _ \| |   | ____/ ___| 
@@ -35,3 +36,4 @@ foreach ($api->products()->products as $product)
 print_r($api->products(array("q"=>array("taxons_id_eq" => 2))));
  only show products in the taxon category called 'QTK'
 $api->products(array("q" => array("taxons_name_eq" => "QTK")));
+```
