@@ -44,3 +44,12 @@ $api->products(array("q" => array("taxons_name_eq" => "QTK")));
 
 ```
 
+### Error handling
+``` php
+// fetch non existent order
+if ($order = $api->orders('R911')) {
+  print_r($order);
+} else {
+  print "Request Failed: ".$api->getError();
+}
+```
