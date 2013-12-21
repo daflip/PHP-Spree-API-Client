@@ -1,5 +1,7 @@
 
 # Simple High Performance Spree API Client for PHP
+
+Requires curl php extension
  License: MIT
 
 # EXAMPLES
@@ -45,6 +47,8 @@ $api->products(array("q" => array("taxons_name_eq" => "QTK")));
 ```
 
 ### Error handling
+Any request which fails will return false, you can obtain an error message by calling getError on the api class.
+
 ``` php
 // fetch non existent order
 if ($order = $api->orders('R911')) {

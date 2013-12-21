@@ -121,6 +121,7 @@ class SpreeAPI {
         } catch (Exception $e) {
         }
       } else {
+        $this->setError("Curl error: " . curl_error($ch));
         curl_close($ch);
       }
     }
