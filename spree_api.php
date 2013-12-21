@@ -51,7 +51,7 @@ class SpreeAPI {
   private $_last_error   = null;
 
   public function SpreeAPI() {
-    $this->_api_endpoint = trim($this->_api_endpoint, "/");
+    $this->_api_endpoint = trim($this->_api_endpoint, "/ ");
     $this->_time_now     = time();
     $sCacheDir = dirname($this->cachePath("dummy"));
     if (!is_dir($sCacheDir))
